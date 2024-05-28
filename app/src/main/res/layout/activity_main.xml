@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/main"
+        tools:context=".MainActivity"
+        android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona el cálculo:"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnCalculateAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular Monto Final (Cn)" />
+
+    <Button
+        android:id="@+id/btnCalculatePrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular Capital Inicial (Co)"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnCalculateRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular Tasa de Interés (i)"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnCalculateTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular Tiempo (n)"
+        android:layout_marginTop="8dp" />
+
+
+    <LinearLayout
+        android:id="@+id/inputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_marginTop="16dp">
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCompute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Limpiar"
+        android:layout_marginTop="8dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado: "
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" />
+    </LinearLayout>
+
